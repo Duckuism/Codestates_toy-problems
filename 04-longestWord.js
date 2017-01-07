@@ -8,5 +8,32 @@
  */
 
 var longestWord = function(sen) { 
-  // Your code here  
+
+
+  var array = [];
+  array = sen.split(" ");
+
+
+
+  var longgest = array[0]
+  
+
+
+  for (i = 1; i<array.length; i++){
+
+  	
+
+    if (longgest.length < array[i].length){
+    	longgest = array[i];
+
+    } 
+  }
+
+   return longgest; 
+
+   
+
 }
+
+ console.log(longestWord("Teamwork skills will take you anywhere")); 
+
