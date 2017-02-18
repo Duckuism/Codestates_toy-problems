@@ -6,6 +6,27 @@
 // Otherwise return the string false. 
 
 function ABCheck(str) { 
-
-  // code goes here           
+    // var num1=str.indexOf('a');
+    // var num2=str.indexOf('b');
+    for(i=0;i<str.length;i++){
+        if(str[i] = 'a'){
+        var num1 = i;
+        }
+        else if(str[i]='b'){
+        var num2 = i;
+        }else{
+            
+        }
+    }
+    var sub = num2-num1;
+    if(sub=4){
+        var result = true;
+    }
+    else{
+    result= false   
+    }
+return result;
+      // code goes here           
 }
+console.log(ABCheck('lane borrowed'));
+

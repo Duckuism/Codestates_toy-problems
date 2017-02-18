@@ -7,5 +7,36 @@
  */
 
 var letterCapitalize = function(str) { 
-  // Your code here           
-};
+  
+  var answer = [];
+   var array = [];
+   array = str.split(" ");
+   
+
+   for(var i=0; i<array.length; i++){
+
+
+  	array[i] = array[i].split('');
+   		
+
+    array[i][0] = array[i][0].toUpperCase();
+  	
+    console.log(array);
+
+
+
+   }
+   for (var k=0; k<array.length; k++){
+   // array[k].push(answer);
+
+   
+   
+
+   }
+
+return  array.join(' ').replace(/,/g, "")
+
+}
+
+
+console.log(letterCapitalize("Hello world"));

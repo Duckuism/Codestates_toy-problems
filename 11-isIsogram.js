@@ -8,5 +8,18 @@
  */
 
 var isIsogram = function(str) {
+ var object = {};
+ var result;
+ var string = str.toLowerCase();
+    for(i=0;i<string.length;i++){
+         if(!object[string[i]]){
+            object[string[i]] = 1;
+            
+         }else{
+            
+            return false;
+          }
+    }
+return true;
   //Your code here
 };

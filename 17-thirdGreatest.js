@@ -8,10 +8,24 @@
 // because the first three words are all 5 letters long, so return the last one. 
 // The array will have at least three strings and each string will only contain letters. 
 
+var strArr = ["hello", "world", "before", "all", "abckejhlajf", "afls","abcfg"] ;
 
 function ThirdGreatest(strArr) { 
 
-  // code goes here  
-  return strArr; 
+	var result = [];
+	result[0] = strArr[0];
+	for ( var i = 1; i<strArr.length; i++){
+		
+		if(result[0].length < strArr[i].length){
+			result.unshift(strArr[i]);
+		}else if(result[0].length === strArr[i].length){
+			result.push(strArr[i]);
+		}
+	}
+
+	console.log(result);
+  return result[2]; 
          
 }
+
+console.log(ThirdGreatest(strArr));

@@ -6,7 +6,6 @@
 
 function ThreeFiveMultiples(num) { 
 
-  // code goes here  
-  return num; 
-         
+
+
 }

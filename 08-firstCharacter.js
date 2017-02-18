@@ -6,5 +6,27 @@
  */
 
 var makeString = function(s) {
-  // Your code here
+
+	var answer = [];
+   var array = [];
+   array = s.split(" ");
+   
+
+   for(var i=0; i<array.length; i++){
+
+  	array[i] = array[i].split('');
+
+
+   		
+   	answer.push(array[i][0]);
+
+
+   }
+
+return answer.join('')
+
 }
+
+
+
+console.log(makeString("The community at Code States might be the biggest asset"));

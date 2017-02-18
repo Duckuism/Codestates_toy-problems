@@ -4,9 +4,23 @@
 // For example if the input is 16 then your program should return the string true 
 // but if the input is 22 then the output should be the string false.
 
-function PowersofTwo(num) { 
 
-  // code goes here  
-  return num; 
-         
-}                                                                                                
+
+function PowersofTwo(num) { 	
+	
+var rest = 0;
+var number = num;
+
+  while(number>2){
+  	if(number % 2 === 1){
+  		number = number/2;
+  		rest++;
+  	}else{number = number/2;}
+
+  }
+  	if(rest !== 0){return false}
+
+  return true
+}         
+
+console.log(PowersofTwo(16));                                                                                       
